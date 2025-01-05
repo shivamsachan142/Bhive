@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
-from jose import JWTError, jwt
-from database import SessionLocal
-from models import User
+from jose import jwt
+from dao.database import SessionLocal
+from dao.models import User
 from typing import Optional
 from datetime import datetime, timedelta
 
